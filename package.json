@@ -1,0 +1,33 @@
+{
+  "name": "bullmq-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"start": "concurrently -c \"bgRed.bold,bgBlue.bold,bgYellow.bold\" npm:start:queue npm:start:worker1 npm:start:worker2",
+		"start:queue": "ts-node ./src/queue.ts",
+		"start:worker1": "ts-node ./src/worker1.ts",
+		"start:worker2": "ts-node ./src/worker2.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerino-ligutom/bullmq-experiment.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cerino-ligutom/bullmq-experiment/issues"
+  },
+  "homepage": "https://github.com/cerino-ligutom/bullmq-experiment#readme",
+  "dependencies": {
+    "bullmq": "^1.8.14",
+    "express": "^4.17.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "concurrently": "^5.2.0"
+  }
+}
