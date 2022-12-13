@@ -22,7 +22,7 @@
   "homepage": "https://github.com/cerino-ligutom/bullmq-experiment#readme",
   "dependencies": {
     "bullmq": "^1.8.14",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6"
   },
